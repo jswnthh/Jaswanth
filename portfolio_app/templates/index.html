@@ -2,212 +2,204 @@
 
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title> Portfolio </title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="{% static 'css/content.css' %}">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-    </head>
-    <body>
-        <div class="content-wrapper margin-center">
-            <div class="flex-column header">
-                <header>
-                    <div class="intro">
-                        <p>Hi, my name is</p>
-                        <h1> Jaswanth. </h1>
-                        <h2>I like to build machine learning models</h2>
-                    </div>
-                </header>
-                <section class="about-section">
-                    <p>
-                        <strong>The world of <span class="tooltip">algorithms<span class="tooltiptext">Something programmers use when they don't want to explain their code.</span></span> fascinates me.</strong> Computers rely on billions of transistors acting as tiny switches, where fundamental logic is at play, but a deeper layer of reasoning underlies it all.
-                    </p>
-                    <p>
-                        <strong>This fascination grew when I discovered machine learning.</strong> Algorithms evolved from rigid instructions to systems that can learn, evaluate, and adapt from mistakes. This complexity is thrilling and opens up vast possibilities. As Richard Feynman said, "What I cannot create, I cannot understand." Building and refining algorithms is my way of achieving true understanding and expressing it with elegant code.
-                    </p>
-                </section>
-                <div class="resume-btn">
-                    <a href="#resume" class="button-85">Check out my Resume</a>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Portfolio</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'css/content.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="content-wrapper margin-center">
+        <div class="flex-column header">
+                <div class="intro">
+                    <p>Hi, my name is</p>
+                    <h1>Jaswanth.</h1>
+                    <h2>I like to build machine learning models</h2>
                 </div>
-                <div class="skills flex flex-column">
-                    <p>Few skills I've picked up.</p>
-                    <button class="collapsible">Machine Learning Libraries</button>
-                    <div class="content">
-                        <ul>
-                            <li>NumPy</li>
-                            <li>Pandas</li>
-                            <li>PyTorch</li>
-                            <li>Keras</li>
-                            <li>Scikit-learn</li>
-                        </ul>
-                    </div>
-                    
-                    <button class="collapsible">Deep Learning Concepts</button>
-                    <div class="content">
-                        <ul>
-                            <li>Neural Networks</li>
-                            <li>Convolutional Neural Networks (CNNs)</li>
-                            <li>Recurrent Neural Networks (RNNs)</li>
-                            <li>Natural Language Processing (NLP)</li>
-                            <li>Generative Adversarial Networks (GANs)</li>
-                        </ul>
-                    </div>
-                    
-                    <button class="collapsible">Visualization</button>
-                    <div class="content">
-                        <ul>
-                            <li>Power BI</li>
-                            <li>Tableau</li>
-                            <li>Matplotlib</li>
-                            <li>Seaborn</li>
-                        </ul>
-                    </div>
-                    </div>
+                <div class="bright-side">
+                    <p>Let's look at the bright-side</p>
+                    <div class="arrow-right"></div>
+                </div>
+        </div>
+        <div class="main-wrapper">
+            <section class="about-section">
+                <p>
+                    <strong>The world of <span class="tooltip">algorithms<span class="tooltiptext">Something programmers use when they don't want to explain their code.</span></span> fascinates me.</strong> Computers rely on billions of transistors acting as tiny switches, where fundamental logic is at play, but a deeper layer of reasoning underlies it all.
+                </p>
+                <p>
+                    <strong>This fascination grew when I discovered machine learning.</strong> Algorithms evolved from rigid instructions to systems that can learn, evaluate, and adapt from mistakes. This complexity is thrilling and opens up vast possibilities. As Richard Feynman said, "What I cannot create, I cannot understand." Building and refining algorithms is my way of achieving true understanding and expressing it with elegant code.
+                </p>
+            </section>
+            <div class="resume-btn">
+                <a href="#resume" class="button-85">Check out my Resume</a>
+            </div>
+            <div class="skills flex flex-column">
+                <p>Few skills I've picked up.</p>
+                <button class="collapsible">Machine Learning Libraries</button>
+                <div class="content">
+                    <ul>
+                        <li>NumPy</li>
+                        <li>Pandas</li>
+                        <li>PyTorch</li>
+                        <li>Keras</li>
+                        <li>Scikit-learn</li>
+                    </ul>
+                </div>
+                <button class="collapsible">Deep Learning Concepts</button>
+                <div class="content">
+                    <ul>
+                        <li>Neural Networks</li>
+                        <li>Convolutional Neural Networks (CNNs)</li>
+                        <li>Recurrent Neural Networks (RNNs)</li>
+                        <li>Natural Language Processing (NLP)</li>
+                        <li>Generative Adversarial Networks (GANs)</li>
+                    </ul>
+                </div>
+                <button class="collapsible">Visualization</button>
+                <div class="content">
+                    <ul>
+                        <li>Power BI</li>
+                        <li>Tableau</li>
+                        <li>Matplotlib</li>
+                        <li>Seaborn</li>
+                    </ul>
                 </div>
             </div>
-            <div class="main-wrapper">
-                <main class="flex-column">
-                    <section>
+            <main class="flex-column">
+                <section>
                     <div class="init-section">
-                        <h1>  
-                            Notable Initiatives 
-                        </h1>
-                            <div class="section-header">
-
-                            </div>
-                            <div class="navbar">
-                                <ul class="navbar-contents flex-row">
-                                    <li><span id="project-btn" class="button-27a" >Project</span></li>
-                                    <li><span id="experience-btn" class="button-27a" >Experience</span></li>
-                                    <li><span id="others-btn" class="button-27a">Others</span></li>
+                        <h1>Notable Initiatives</h1>
+                        <div class="navbar">
+                            <ul class="navbar-contents flex-row">
+                                <li><span id="project-btn" class="button-27a">Project</span></li>
+                                <li><span id="experience-btn" class="button-27a">Experience</span></li>
+                                <li><span id="others-btn" class="button-27a">Others</span></li>
+                            </ul>
+                        </div>
+                        <div class="navbar-init">
+                            <ul class="navbar-contents-init flex-row"></ul>
+                        </div>
+                        <div class="line-horizontal"></div>
+                        <!-- Project-content -->
+                        <div class="project-content">
+                            <section class="flex flex-column">
+                                <div class="flex-row project-title-wrapper">
+                                    <div class="project-title">
+                                        <h3>Generative Adversarial Networks</h3>
+                                    </div>
+                                    <div class="github-link">
+                                        <a href="https://github.com/jswnthh/ML_projects/blob/main/cycle-gan-issa-painter.ipynb">
+                                            <img src="{% static 'media/github.svg' %}" alt="github">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="feature-duration">
+                                    <p>2024</p>
+                                </div>
+                                <ul>
+                                    <li>Developed and implemented <strong>CycleGAN</strong> to generate <strong>7000 to 10000 Monet style images</strong> demonstrating expertise in Deep Learning and Image Synthesis.</li>
+                                    <li>Optimized model performance through iterative experimentation with model evaluation metrics and techniques, achieving a balance between image quality and computational efficiency</li>
+                                    <li>Utilized Python and <strong>Pytorch</strong> to construct a robust CycleGAN consisting of a generator and discriminator (image recognition) neural network models, achieving high-fidelity replication of Monet’s artistic style</li>
                                 </ul>
-                            </div>
-                            <div class="navbar-init">
-                                    <ul class="navbar-contents-init flex-row"></ul>
-                            </div>
-                            <div class="line-horizontal"></div>
-                            <div class="feature-details">
-                                <!-- Project-content -->
-                                <div class="project-content">
-                                    <section class="flex flex-column">
-                                        <div class="flex-row project-title-wrapper">
-                                            <div class="project-title">
-                                                <h3> Generative Adverserial Networks </h3>
-                                            </div>
-                                            <div class="github-link">
-                                                <a href="https://github.com/jswnthh/ML_projects/blob/main/cycle-gan-issa-painter.ipynb"><img src="{% static '/media/github.svg' %}"  alt="github"></a>
-                                            </div>
-                                        </div>
-                                        <div class="feature-duration">
-                                            <p>2024</p>
-                                        </div>
-                                        <div>
-                                            <ul>
-                                                <li>Developed and implemented <strong>CycleGAN</strong> to generate <strong>7000 to 10000 Monet style images</strong> demonstrating expertise in Deep Learning and Image Synthesis.</li>
-                                                <li>Optimized model performance through iterative experimentation with model evaluation metrics and techniques, achieving a balance between image quality and computational efficiency</li>
-                                                <li>Utilized Python and <strong>Pytorch</strong> to construct a robust CycleGAN consisting of a generator and discriminator (image recognition) neural network models, achieving high-fidelity replication of Monet’s artistic style</li>
-    
-                                            </ul>
-                                        </div>
-                                    </section>
+                            </section>
+                        </div>
+                        <div class="project-content">
+                            <section class="flex flex-column">
+                                <div class="flex-row project-title-wrapper">
+                                    <div class="project-title">
+                                        <h3>Sentiment Analysis using Disaster Tweets</h3>
+                                    </div>
+                                    <div class="github-link">
+                                        <a href="https://github.com/jswnthh/ML_projects/blob/main/cycle-gan-issa-painter.ipynb">
+                                            <img src="{% static 'media/github.svg' %}" alt="github">
+                                        </a>
+                                    </div>
                                 </div>
-                                <div class="project-content">
-                                    <section class="flex flex-column">
-                                        <div class="flex-row project-title-wrapper">
-                                            <div class="project-title">
-                                                <h3> Sentiment Analysis using Disaster Tweets </h3>
-                                            </div>
-                                            <div class="github-link">
-                                                <a href="https://github.com/jswnthh/ML_projects/blob/main/cycle-gan-issa-painter.ipynb"><img src="{% static '/media/github.svg' %}"  alt="github"></a>
-                                            </div>
-                                        </div>
-                                        <div class="feature-duration">
-                                            <p>2024</p>
-                                        </div>
-                                        <div>
-                                            <ul>
-                                                <li>Developed scalable Machine Learning Pipeline combining <strong>TF-IDF Vectorization</strong> for Text Processing and  for <strong>Logistic Regression</strong>Text Classification.</li>
-                                                <li>Researched and Applied <strong>Attention mask</strong> to the TF-IDF Vectorization to enhance performance.</li>
-                                                <li>Hypertuned and Refined the Model to get the maximum f1-score(+77), updated in Kaggle.</li>
-                                                <li>Applied advanced deep learning techniques using pretrained models from HuggingFace, including <strong>DistilBERT and LSTM</strong>, to further improve sentiment analysis accuracy.</li>
-                                            </ul>
-                                            </div>
-                                        </div>
-                                    </section>
+                                <div class="feature-duration">
+                                    <p>2024</p>
                                 </div>
-                                <div class="project-content">
-                                    <section class="flex flex-column">
-                                        <div class="flex-row project-title-wrapper">
-                                            <div class="project-title">
-                                                <h3> Biomimicry - PathFinding </h3>
-                                            </div>
-                                            <div class="github-link">
-                                                <a href="https://github.com/jswnthh/ML_projects/blob/main/cycle-gan-issa-painter.ipynb"><img src="{% static '/media/github.svg' %}"  alt="github"></a>
-                                            </div>
-                                        </div>
-                                        <div class="feature-duration">
-                                            <p>2024</p>
-                                        </div>
-                                        <div>
-                                            <ul>
-                                                <li>Exhibited a fervor for <strong>crafting modular, scalable, and bug-free Python code (+600 Lines Of Code)</strong> using <strong>Pygame framework</strong>.</li>
-                                                <li>Built reusable components (over 150), promoting code reusability and fostering efficient development.</li>
-                                                <li>Utilized techniques from computer vision and <strong>swarm intelligence</strong> to empower components with decentralized decision-making capabilities for dynamic and adaptable systems.</li>
-                                                <li>Optimized Pathfinding for Efficiency: Achieved path construction in obstacle-based terrain within <strong>approximately 42 seconds </strong>demonstrating efficiency in code optimization</li>
-                                            </ul>
-                                        </div>
-                                    </section>
+                                <ul>
+                                    <li>Developed scalable Machine Learning Pipeline combining <strong>TF-IDF Vectorization</strong> for Text Processing and for <strong>Logistic Regression</strong> Text Classification.</li>
+                                    <li>Researched and Applied <strong>Attention mask</strong> to the TF-IDF Vectorization to enhance performance.</li>
+                                    <li>Hypertuned and Refined the Model to get the maximum f1-score (+77), updated in Kaggle.</li>
+                                    <li>Applied advanced deep learning techniques using pretrained models from HuggingFace, including <strong>DistilBERT and LSTM</strong>, to further improve sentiment analysis accuracy.</li>
+                                </ul>
+                            </section>
+                        </div>
+                        <div class="project-content">
+                            <section class="flex flex-column">
+                                <div class="flex-row project-title-wrapper">
+                                    <div class="project-title">
+                                        <h3>Biomimicry - PathFinding</h3>
+                                    </div>
+                                    <div class="github-link">
+                                        <a href="https://github.com/jswnthh/ML_projects/blob/main/cycle-gan-issa-painter.ipynb">
+                                            <img src="{% static 'media/github.svg' %}" alt="github">
+                                        </a>
+                                    </div>
                                 </div>
-                                <!-- experience-content -->
-                                <div class="experience-content">
-                                    <section class="flex flex-column">
-                                        <div class="flex-row project-title-wrapper">
-                                            <div class="project-title">
-                                                <h3><span>Data Analyst @ <a href="https://toolfe.com/">Toolfe</a></span></h3>
-                                            </div>
-                                            <div class="github-link">
-                                                <a href="https://github.com/jswnthh/ML_projects/blob/main/cycle-gan-issa-painter.ipynb"><img src="{% static '/media/github.svg' %}"  alt="github"></a>
-                                            </div>
-                                        </div>
-                                        <div class="feature-duration">
-                                            <p>June 2023 - Aug 2023</p>
-                                        </div>
-                                        <ul>
-                                            <li>Developed a <strong>Credit Risk Model: Achieved Recall Scores up to 80%</strong> on different Models including Pipelines</li>
-                                            <li>Worked with Advanced Machine Learning Algorithms:  <strong>Decision trees, Support Vector Machines, Random forests.</strong></li>
-                                            <li>Optimized Model Performance: Utilizing <strong>Hyperparameters, Cross Validations</strong> Combinatorics, , Data Preprocessing and Cleaning.</li>
-                                            <li>Communicated technical findings effectively, utilizing data visualization for clarity and thorough Documentations with Proof of Concept</li>
-                                            <li> Demonstrated <strong>Communicative skills</strong> by Authoring  Blogs(+15) on Web Analytics and its current trends, Tools and Technology in automation</li>
-                                        </ul>
-                                    </section>
+                                <div class="feature-duration">
+                                    <p>2024</p>
                                 </div>
-                                <!-- others-content -->
-                                <div class="others-content">
-                                    <ul>
-                                        <li><strong>First prize recipient</strong>, paper presentation - <strong>Ethiraj college</strong>. "Biomimetic Approach for Pathfinding"</li>
-                                        <li><strong>Third prize recipient</strong>, paper presentation and documentation - <strong>SRM UNIVERSITY</strong>. "Bioinspired Pathfinding".</li>
-                                        <li>Participated, <strong>National conference on AI powered Social Media - NCAISMM</strong>.</li>
-                                        <li>Hosted the <strong>>eTOTAL 2023 International Event</strong> - Associatedwith State Project <strong>RUSA</strong></li>
-                                    </ul>
+                                <ul>
+                                    <li>Exhibited a fervor for <strong>crafting modular, scalable, and bug-free Python code (+600 Lines Of Code)</strong> using <strong>Pygame framework</strong>.</li>
+                                    <li>Built reusable components (over 150), promoting code reusability and fostering efficient development.</li>
+                                    <li>Utilized techniques from computer vision and <strong>swarm intelligence</strong> to empower components with decentralized decision-making capabilities for dynamic and adaptable systems.</li>
+                                    <li>Optimized Pathfinding for Efficiency: Achieved path construction in obstacle-based terrain within <strong>approximately 42 seconds</strong>, demonstrating efficiency in code optimization.</li>
+                                </ul>
+                            </section>
+                        </div>
+                        <!-- experience-content -->
+                        <div class="experience-content">
+                            <section class="flex flex-column">
+                                <div class="flex-row project-title-wrapper">
+                                    <div class="project-title">
+                                        <h3><span>Data Analyst @ <a href="https://toolfe.com/">Toolfe</a></span></h3>
+                                    </div>
+                                    <div class="github-link">
+                                        <a href="https://github.com/jswnthh/ML_projects/blob/main/cycle-gan-issa-painter.ipynb">
+                                            <img src="{% static 'media/github.svg' %}" alt="github">
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
-                        </section>
+                                <div class="feature-duration">
+                                    <p>June 2023 - Aug 2023</p>
+                                </div>
+                                <ul>
+                                    <li>Developed a <strong>Credit Risk Model: Achieved Recall Scores up to 80%</strong> on different Models including Pipelines</li>
+                                    <li>Worked with Advanced Machine Learning Algorithms: <strong>Decision trees, Support Vector Machines, Random forests.</strong></li>
+                                    <li>Optimized Model Performance: Utilizing <strong>Hyperparameters, Cross Validations</strong> Combinatorics, Data Preprocessing and Cleaning.</li>
+                                    <li>Communicated technical findings effectively, utilizing data visualization for clarity and thorough Documentations with Proof of Concept</li>
+                                    <li>Demonstrated <strong>Communicative skills</strong> by Authoring Blogs (+15) on Web Analytics and its current trends, Tools and Technology in automation</li>
+                                </ul>
+                            </section>
+                        </div>
+                        <!-- others-content -->
+                        <div class="others-content">
+                            <ul>
+                                <li><strong>First prize recipient</strong>, paper presentation - <strong>Ethiraj college</strong>. "Biomimetic Approach for Pathfinding"</li>
+                                <li><strong>Third prize recipient</strong>, paper presentation and documentation - <strong>SRM UNIVERSITY</strong>. "Bioinspired Pathfinding".</li>
+                                <li>Participated, <strong>National conference on AI powered Social Media - NCAISMM</strong>.</li>
+                                <li>Hosted the <strong>eTOTAL 2023 International Event</strong> - Associated with State Project <strong>RUSA</strong></li>
+                            </ul>
+                        </div>
                     </div>
-                </main>
-            </div>  
+                </section>
+                <div class="footer">
+                    <footer class="footer-content">
+                        <p>This portfolio is developed by a non-web developer, loosely designed using Figma. The tech stack includes Python-Django, HTML, CSS, and JavaScript, deployed on render.</p>
+                    </footer>
+                </div>
+            </main>
         </div>
+
     </div>
-    <div class="footer">
-        <footer class="footer-content">
-            <p> This portfolio is developed by a non-web developer, loosely designed using Figma. The tech stack includes Python-Django, HTML, CSS, and JavaScript, deployed on render.</p>
-        </footer>
-    </div>
+
     <script type="text/javascript" src="{% static 'js/content.js' %}"></script>
-    </body>
+</body>
 </html>

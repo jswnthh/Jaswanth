@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // CSS class for active state
-document.head.insertAdjacentHTML('beforeend', '<style>.active {   box-shadow: none; outline: none; color: inherit;  background: inherit; border-color: black;border-left-width: 12px; border-style: solid; box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px; transform: translateY(-2px);}</style>');
+document.head.insertAdjacentHTML('beforeend', '<style>.active {   box-shadow: none; outline: none; color: inherit;  background: inherit; border-color: black;border-bottom-width: 12px; border-style: solid; box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px; transform: translateY(-2px);}</style>');
 
 
 
