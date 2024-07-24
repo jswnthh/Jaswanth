@@ -15,6 +15,19 @@
 </head>
 <body>
     <div class="content-wrapper margin-center">
+        <div class="ham-navbar">
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <div class="menu-content" id="menuContent">
+                <a href="{% url 'blogs'%}">Blogs</a>
+                <!-- <a href="#projects">Achievements</a> -->
+                <!-- <a href="#experience">Experience</a>
+                <a href="#contact">Contact</a> -->
+            </div>
+        </div>
         <div class="flex-column header">
                 <div class="intro">
                     <p>Hi, my name is</p>
@@ -54,7 +67,6 @@
                 <button class="collapsible">Deep Learning Concepts</button>
                 <div class="content">
                     <ul>
-                        <li>Neural Networks</li>
                         <li>Convolutional Neural Networks (CNNs)</li>
                         <li>Recurrent Neural Networks (RNNs)</li>
                         <li>Natural Language Processing (NLP)</li>
@@ -77,9 +89,8 @@
                         <h1>Notable Initiatives</h1>
                         <div class="navbar">
                             <ul class="navbar-contents flex-row">
-                                <li><span id="project-btn" class="button-27a">Project</span></li>
+                                <li><span id="project-btn" class="button-27a">Projects</span></li>
                                 <li><span id="experience-btn" class="button-27a">Experience</span></li>
-                                <li><span id="others-btn" class="button-27a">Others</span></li>
                             </ul>
                         </div>
                         <div class="navbar-init">

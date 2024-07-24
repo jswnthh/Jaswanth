@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const navbar = document.querySelector('.navbar-init .navbar-contents-init');
     const projectContents = document.querySelectorAll('.project-content');
     const experienceContents = document.querySelectorAll('.experience-content');
-    const otherContents = document.querySelectorAll('.others-content');
+    // const otherContents = document.querySelectorAll('.others-content');
 
     function resetNavbar() {
         // Clear existing buttons
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Function to hide all content sections
     function hideAllSections() {
-        document.querySelectorAll('.project-content, .experience-content, .others-content').forEach((content) => {
+        document.querySelectorAll('.project-content, .experience-content').forEach((content) => {
             content.classList.remove('show');
         });
     }
@@ -67,16 +67,13 @@ document.addEventListener('DOMContentLoaded', function () {
         } else if (buttonId === 'experience-btn') {
             createSpans(experienceContents);
             showContent(experienceContents, 0); 
-        } else if (buttonId === 'others-btn') {
-            resetNavbar();
-            showContent(otherContents, 0); 
-        }
+        } 
     }
 
     // Attach event listeners to buttons
     document.getElementById('project-btn').addEventListener('click', handleButtonClick);
     document.getElementById('experience-btn').addEventListener('click', handleButtonClick);
-    document.getElementById('others-btn').addEventListener('click', handleButtonClick);
+    //document.getElementById('others-btn').addEventListener('click', handleButtonClick);
 
     // Auto-focus and show the first content by default
     window.onload = function() {
@@ -133,6 +130,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+function toggleMenu() {
+    const menuContent = document.getElementById('menuContent');
+    menuContent.style.display = menuContent.style.display === 'flex' ? 'none' : 'flex';
+
+    // Toggle the icon bars to create an X shape
+    const menuIcon = document.querySelector('.menu-icon');
+    menuIcon.classList.toggle('change');
+}
 
 
 
