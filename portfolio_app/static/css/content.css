@@ -31,12 +31,8 @@ a::after {
     width: 0; /* Start with no width */
     height: 1px; /* Height of underline */
     background-color: #222; 
-    transition: all 0.3s ease; /* Transition effect for underline */
 }
 
-a:hover::after {
-    width: 100%; /* On hover, transition to full width */
-}
 
 p {
     line-height: 1.5em;
@@ -52,9 +48,6 @@ html {
     scroll-behavior: smooth;
 }
 
-/* .margin-center {
-    padding: 0 auto;
-} */
 
 .ham-navbar {
 
@@ -185,7 +178,7 @@ html {
 
 .tooltip {
     position: relative;
-    font-weight: 600
+    font-weight: 400
   }
   
   .tooltip .tooltiptext {
@@ -193,7 +186,7 @@ html {
     width: 180px;
     background-color: #222;
     color: #fff;
-    text-align: center;
+    text-align: left;
     padding: 10px;
     border-radius: 6px;
     position: absolute;
@@ -221,6 +214,8 @@ html {
     display: inline-block;
     height: 40px;
     width: 40px;
+    border-bottom: 2px solid black; /* Adjust the color and thickness as needed */
+    text-align: center;
 }
 
 .github-link img {
@@ -413,11 +408,12 @@ background-color: #f1f1f1;
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
+    box-shadow: rgba(150, 122, 122, 0.25) 0 8px 15px;
   }
   
   .button-85:before {
     content: "";
-    background: linear-gradient(
+    /* background: linear-gradient(
       45deg,
       #ff0000,
       #ff7300,
@@ -428,7 +424,8 @@ background-color: #f1f1f1;
       #7a00ff,
       #ff00c8,
       #ff0000
-    );
+    ); */
+    
     position: absolute;
     top: -2px;
     left: -2px;
@@ -442,6 +439,8 @@ background-color: #f1f1f1;
     transition: opacity 0.3s ease-in-out;
     border-radius: 10px;
   }
+
+  
   
   @keyframes glowing-button-85 {
     0% {
@@ -472,7 +471,7 @@ background-color: #f1f1f1;
       color: white;
   }
   
-  .button-85 {
+  /* .button-85 {
     padding: 0.6em 2em;
     border: none;
     outline: none;
@@ -542,7 +541,7 @@ background-color: #f1f1f1;
   .button-85:hover {
       background-color: #222;
       color: white;
-  }
+  } */
 
   .resume-btn {
     flex: 1; 
@@ -950,8 +949,10 @@ background-color: #f1f1f1;
     }
 
     .content-wrapper {
-        background-color: #222;
+        /* background-color: rgb(34, 34, 34); */
+        background: #222;
         color: white;
+
         height: 100vh;
         flex-direction: row;
         width: 80%;
@@ -999,55 +1000,62 @@ background-color: #f1f1f1;
     }
     
     .header {
-        background-color: #222;
+        background-color: inherit;
         color: white;
         flex: 1;
-        margin-top: 6.5rem;
+        margin-top: 1rem;
         justify-content: start;
     }
 
     .intro {
-        background-color: #222;
+        background-color: inherit;
         color: white;
         line-height: 1;
-        padding: 15px;
+        padding-left: 30px;
     }
 
-    .intro p {
+    .intro-p {
         display: none;
-        font-size: 1rem;
-        padding-left: 15px;
-        text-align: left;
-        line-height: 1.3;
+    }    
 
+    .about-h {
+        background-color: inherit;
+        color: white;
+        font-size: 0.8rem;
+        padding-right: 40px;
     }
     
     .intro h1{
         background-color: inherit;
         color: inherit;
-        font-size: 3rem;
+        font-size: 4rem;
         font-weight: 600;
         text-align: left;
-
     }
 
     .intro h2{
         background-color: inherit;
         color: inherit;
         margin-top: 15px;
-        font-size: 1.9rem;
+        margin-bottom: 80px;
+        font-size: 1.2rem;
         font-weight: 500;
         line-height: 1.3;
         text-align: left;
-
     }
+
+    .tooltip {
+        background-color: #222;
+        color: white;
+    }
+
+    .tooltip .tooltiptext {
+        background-color: white;
+        color: #222;
+      }
 
     .about-section {
-        margin-top: 6.5rem;
-    }
-
-    .about-section section {
-        align-items: center;
+        display: none;
     }
 
     .skills {
@@ -1074,7 +1082,7 @@ background-color: #f1f1f1;
 
     .navbar-contents,
     .navbar-contents-init {
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     gap: 0.5em;
     flex-wrap: wrap;
@@ -1094,6 +1102,11 @@ background-color: #f1f1f1;
     padding: 1em 2em;
     transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
     }
+
+    .button-85 {
+        top: 70px;
+      }
+
 
     .main-wrapper h1 {
         font-size: 1.5rem;
