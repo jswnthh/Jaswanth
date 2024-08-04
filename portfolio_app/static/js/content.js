@@ -3,15 +3,13 @@ document.addEventListener('DOMContentLoaded', function () {
     const navbar = document.querySelector('.navbar-init .navbar-contents-init');
     const projectContents = document.querySelectorAll('.project-content');
     const experienceContents = document.querySelectorAll('.experience-content');
-    // const otherContents = document.querySelectorAll('.others-content');
 
     function resetNavbar() {
-        // Clear existing buttons
         navbar.innerHTML = '';
     }
 
     function createSpans(contents) {
-        resetNavbar(); // Clear existing buttons
+        resetNavbar();
     
         contents.forEach((_, index) => {
             const span = document.createElement('span');
@@ -86,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // CSS class for active state
-document.head.insertAdjacentHTML('beforeend', '<style>.active {   box-shadow: none; outline: none; color: inherit;  background: inherit; border-color: black;border-bottom-width: 12px; border-style: solid; box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px; transform: translateY(-2px);}</style>');
+document.head.insertAdjacentHTML('beforeend', '<style>.active {box-shadow: none; outline: none; color: white;  background: #333; border-color: black; border-style: solid; transform: translateY(-2px);}</style>');
 
 
 
@@ -130,14 +128,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-function toggleMenu() {
-    const menuContent = document.getElementById('menuContent');
-    menuContent.style.display = menuContent.style.display === 'flex' ? 'none' : 'flex';
 
-    // Toggle the icon bars to create an X shape
-    const menuIcon = document.querySelector('.menu-icon');
-    menuIcon.classList.toggle('change');
-}
+
+
+
+
+
 
 
 

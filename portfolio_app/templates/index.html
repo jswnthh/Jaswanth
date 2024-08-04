@@ -14,50 +14,53 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <div class="content-wrapper margin-center">
-        <div class="ham-navbar">
-            <div class="menu-icon" onclick="toggleMenu()">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </div>
-            <div class="menu-content" id="menuContent">
-                <a href="{% url 'blogs'%}">Blogs</a>
-                <!-- <a href="#projects">Achievements</a> -->
-                <!-- <a href="#experience">Experience</a>
-                <a href="#contact">Contact</a> -->
-            </div>
-        </div>
         <div class="flex-column header">
                 <div class="intro">
-                    <p class="intro-p">Hi, my name is</p>
-                    <h1>Jaswanth.</h1>
-                    <h2>I like to build machine learning models</h2>
-
-                    <p class="about-h">
-                        The world of algorithms fascinates me.  Computers rely on billions of transistors acting as tiny switches, where fundamental logic is at play, but a deeper layer of reasoning underlies it all.
-                    </p>
-                    <p class="about-h">
-                        This fascination grew when I discovered machine learning. Algorithms evolved from rigid instructions to systems that can learn, evaluate, and adapt from mistakes. This complexity is thrilling and opens up vast possibilities.
-                    </p>
+                    <div class="intro-h">
+                        <div>
+                            <h1>Hey there,</h1>
+                            <h1>I'm Jaswanth.</h1>
+                            <h2>I like to build algorithms.</h2>
+                        </div>
+                        <div class="others-btn flex flex-column">
+                            <div class="resume-btn">
+                                <a href="{% static 'pdfs/Jaswanth_resume.pdf' %}" target="_blank" class="button-28">Check out my Resume</a>
+                            </div>
+                            <!-- <div class="resume-btn">
+                                <a href="{%url 'blogs'%}" target="_self" class="button-28">Blogs</a>
+                            </div> -->
+                            <!-- <div class="resume-btn">
+                                <button class="button-28" id="myInput" onclick="copyEmail()">Copy Email</button>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="about-h">
+                        <ul>
+                            <li>
+                                <div class="item-box">
+                                    <p><strong>The world of algorithms fascinates me.</strong> Computers rely on billions of transistors acting as tiny switches but there is so much more happening beneath the surface. The blend of fundamental logic and intricate reasoning is truly inspiring.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-box">
+                                    <p><strong>This fascination grew when I discovered machine learning.</strong> Algorithms evolved from rigid instructions to systems that can learn, evaluate, and adapt from mistakes. This complexity is thrilling and opens up vast possibilities.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-box">
+                                    <p><strong>As Richard Feynman said, <i>"What I cannot create, I do not understand."</i></strong> I focus on developing practical algorithms that drive results. It's not just about perfection but about making sure my creations work seamlessly to solve real-world problems and deliver tangible outcomes.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
         </div>
         <div class="main-wrapper">
-            <!-- <section class="about-section">
-                <p>
-                    <strong>The world of <span class="tooltip">algorithms<span class="tooltiptext">Something programmers use when they don't want to explain their code.</span></span> fascinates me.</strong> Computers rely on billions of transistors acting as tiny switches, where fundamental logic is at play, but a deeper layer of reasoning underlies it all.
-                </p>
-                <p>
-                    <strong>This fascination grew when I discovered machine learning.</strong> Algorithms evolved from rigid instructions to systems that can learn, evaluate, and adapt from mistakes. This complexity is thrilling and opens up vast possibilities. As Richard Feynman said, "What I cannot create, I cannot understand." Building and refining algorithms is my way of achieving true understanding and expressing it with elegant code.
-                </p>
-            </section> -->
-            <div class="resume-btn">
-                <a href="{% static 'pdfs/Jaswanth_resume.pdf' %}" target="_blank" class="button-85">Check out my Resume</a>
-                <!-- <a href="#resume" class="button-85">Check out my Resume</a> -->
-            </div>
             <div class="skills flex flex-column">
                 <p>Few skills I've picked up.</p>
-                <button class="collapsible">Machine Learning Libraries</button>
+                <span class="collapsible">Machine Learning Libraries</span>
                 <div class="content">
                     <ul>
                         <li>NumPy</li>
@@ -67,7 +70,7 @@
                         <li>Scikit-learn</li>
                     </ul>
                 </div>
-                <button class="collapsible">Deep Learning Concepts</button>
+                <span class="collapsible">Deep Learning Concepts</span>
                 <div class="content">
                     <ul>
                         <li>Convolutional Neural Networks (CNNs)</li>
@@ -76,7 +79,7 @@
                         <li>Generative Adversarial Networks (GANs)</li>
                     </ul>
                 </div>
-                <button class="collapsible">Visualization</button>
+                <span class="collapsible">Visualization</span>
                 <div class="content">
                     <ul>
                         <li>Power BI</li>
@@ -105,16 +108,8 @@
                             <section class="flex flex-column">
                                 <div class="flex-row project-title-wrapper">
                                     <div class="project-title">
-                                        <h3><a href="https://github.com/jswnthh/ML_projects/blob/main/cycle-gan-issa-painter.ipynb"><u>Generative Adversarial Networks</u></a></h3>
+                                        <h3><a href="https://github.com/jswnthh/ML_projects/blob/main/cycle-gan-issa-painter.ipynb"><u>Generative Adversarial Networks &#8599</u></a></h3>
                                     </div>
-                                    <div class="github-link">
-                                        <a href="https://github.com/jswnthh/ML_projects/blob/main/cycle-gan-issa-painter.ipynb">
-                                            <img src="{% static 'media/github.svg' %}" alt="github">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="feature-duration">
-                                    <p>2024</p>
                                 </div>
                                 <ul>
                                     <li>Developed and implemented <strong>CycleGAN</strong> to generate <strong>7000 to 10000 Monet style images</strong> demonstrating expertise in Deep Learning and Image Synthesis.</li>
@@ -127,16 +122,8 @@
                             <section class="flex flex-column">
                                 <div class="flex-row project-title-wrapper">
                                     <div class="project-title">
-                                        <h3><a href="https://github.com/jswnthh/ML_projects/blob/main/NLP_Disaster_tweets.ipynb"><u>Sentiment Analysis using Disaster Tweets</u></a></h3>
+                                        <h3><a href="https://github.com/jswnthh/ML_projects/blob/main/NLP_Disaster_tweets.ipynb"><u>Sentiment Analysis using Disaster Tweets &#8599</u></a></h3>
                                     </div>
-                                    <div class="github-link">
-                                        <a href="https://github.com/jswnthh/ML_projects/blob/main/NLP_Disaster_tweets.ipynb">
-                                            <img src="{% static 'media/github.svg' %}" alt="github">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="feature-duration">
-                                    <p>2024</p>
                                 </div>
                                 <ul>
                                     <li>Developed scalable Machine Learning Pipeline combining <strong>TF-IDF Vectorization</strong> for Text Processing and for <strong>Logistic Regression</strong> Text Classification.</li>
@@ -150,16 +137,8 @@
                             <section class="flex flex-column">
                                 <div class="flex-row project-title-wrapper">
                                     <div class="project-title">
-                                        <h3><a href="https://github.com/jswnthh/Biomimetic-way-to-pathfinding"> <u>Biomimicry - PathFinding</u></a></h3>
+                                        <h3><a href="https://github.com/jswnthh/Biomimetic-way-to-pathfinding"> <u>Biomimicry - PathFinding &#8599</u></a></h3>
                                     </div>
-                                    <div class="github-link">
-                                        <a href="https://github.com/jswnthh/Biomimetic-way-to-pathfinding">
-                                            <img src="{% static 'media/github.svg' %}" alt="github">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="feature-duration">
-                                    <p>2024</p>
                                 </div>
                                 <ul>
                                     <li>Exhibited a fervor for <strong>crafting modular, scalable, and bug-free Python code (+600 Lines Of Code)</strong> using <strong>Pygame framework</strong>.</li>
@@ -172,18 +151,13 @@
                         <!-- experience-content -->
                         <div class="experience-content">
                             <section class="flex flex-column">
-                                <div class="flex-row project-title-wrapper">
+                                <div class="flex-column project-title-wrapper">
                                     <div class="project-title">
-                                        <h3><span><a href="https://github.com/jswnthh/Toolfe_projects_ML"><u>Data Analyst</u></a><a href="https://toolfe.com/"><u>@ Toolfe</u></a></span></h3>
+                                        <h3><span><a href="https://github.com/jswnthh/Toolfe_projects_ML"><u>Data Analyst</u></a><a href="https://toolfe.com/"><u>@ Toolfe &#8599</u></a></span></h3>
                                     </div>
-                                    <div class="github-link">
-                                        <a href="https://github.com/jswnthh/Toolfe_projects_ML">
-                                            <img src="{% static 'media/github.svg' %}" alt="github">
-                                        </a>
+                                    <div class="feature-duration">
+                                        <p>June 2023 - Aug 2023</p>
                                     </div>
-                                </div>
-                                <div class="feature-duration">
-                                    <p>June 2023 - Aug 2023</p>
                                 </div>
                                 <ul>
                                     <li>Developed a <strong>Credit Risk Model: Achieved Recall Scores up to 80%</strong> on different Models including Pipelines</li>
@@ -207,7 +181,7 @@
                 </section>
                 <div class="footer">
                     <footer class="footer-content">
-                        <p>This portfolio is developed by a non-web developer, loosely designed using Figma.Tech stack includes Python-Django, HTML/CSS, JavaScript and deployed on render.</p>
+                        <p>This portfolio is loosely designed using Figma. Tech stack includes Python-Django, HTML/CSS, JavaScript and deployed on render.</p>
                     </footer>
                 </div>
             </main>
